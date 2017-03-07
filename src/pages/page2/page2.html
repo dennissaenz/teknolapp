@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contacto</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+
+
+    <ion-item>
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="msj_nombre" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="msj_correo" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Comentario</ion-label>
+        <ion-input type="text" [(ngModel)]="msj_comentario" ></ion-input>
+    </ion-item>    
+    <ion-item>
+    </ion-item>
+
+ </ion-list>
+
+<button ion-button full (click)="enviar()">Enviar</button>
+
+</ion-content>
